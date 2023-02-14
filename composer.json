@@ -1,0 +1,35 @@
+{
+	"name": "rivervanrain/hooks",
+	"type": "elgg-plugin",
+	"description": "Some hooks for Elgg",
+    "license": "AGPL-3.0-or-later",
+	"keywords": ["development"],
+	"homepage": "https://wzm.me",
+	"authors": [
+		{
+		  "name": "Nikolai Shcherbin",
+		  "email": "support@wzm.me"
+		}
+	],
+	"require": {
+		"composer/installers": "^1.0.8"
+	},
+	"autoload": {
+		"psr-0": {
+			"": "classes/"
+		}
+	},
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+	"conflict": {
+		"elgg/elgg": "<4.3",
+		"subwebz/theme": "*"
+	},
+	"support": {
+		"source": "https://github.com/rivervanrain/hooks"
+	}
+}
