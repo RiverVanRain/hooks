@@ -13,7 +13,8 @@ class HtmlawedConfig {
 	
 	public function __invoke(\Elgg\Hook $hook) {
 		$var = $hook->getValue();
-		if ((!is_string($var) && !is_array($var)) || empty($var)) {
+		
+		if ((!is_string($var) && !is_array($var)) || empty($var) || isset($var['params']['head_extend']) || isset($var['params']['footer_extend'])) {
 			return $var;
 		}
 		
