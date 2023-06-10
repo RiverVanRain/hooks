@@ -10,7 +10,7 @@
 namespace wZm\Hooks;
 
 class FilterHooks {
-	public function __invoke(\Elgg\Hook $hook) {
-		elgg_unregister_plugin_hook_handler('sanitize', 'input', \wZm\Hooks\HtmlawedConfig::class);
+	public function __invoke(\Elgg\Event $event) {
+		elgg_unregister_event_handler('sanitize', 'input', \wZm\Hooks\HtmlawedConfig::class);
 	}
 }

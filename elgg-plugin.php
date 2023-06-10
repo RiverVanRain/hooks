@@ -3,10 +3,10 @@
 return [
 	'plugin' => [
 		'name' => 'Elgg Hooks',
-		'version' => '2.0.0',
+		'version' => '3.0.0',
 	],
 	
-	'hooks' => [
+	'events' => [
 		'action:validate' => [
 			'plugins/settings/save' => [
 				\wZm\Hooks\FilterHooks::class => ['priority' => 800],
