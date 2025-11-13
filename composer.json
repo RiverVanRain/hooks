@@ -23,7 +23,7 @@
         }
     ],
 	"conflict": {
-		"elgg/elgg": "<6.1",
+		"elgg/elgg": "<6.3",
 		"subwebz/theme": "*"
 	},
 	"support": {
